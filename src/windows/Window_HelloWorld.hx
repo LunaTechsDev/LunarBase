@@ -5,6 +5,9 @@ import rm.windows.Window_Base;
 /**
  * Here we create our new window, same way you would in vanilla JS using the
  * class syntax.
+ * 
+ * Note: We use the @:native() tag to ensure the class will be
+ * named Window_HelloWorld in the final JS output.
  */
  @:native('Window_HelloWorld')
 class Window_HelloWorld extends Window_Base {
