@@ -24,11 +24,13 @@
 --each
 
 --next
-
---macro macros.MacroTools.includeJsLib("./src/Parameters.js")
--js games/mz/js/plugins/Luna_TestPlugin.js
+-D compileMV
+--macro macros.MacroTools.includeJsLib("./src/ParamsMV.js")
+-js games/mv/js/plugins/Luna_TestPlugin.js
 
 --next
--D compileMV
---macro macros.MacroTools.includeJsLib("./src/ParametersMV.js")
--js games/mv/js/plugins/Luna_TestPlugin.js
+-D !compileMV
+--macro macros.MacroTools.includeJsLib("./src/Params.js")
+-js games/mz/js/plugins/Luna_TestPlugin.js
+
+
