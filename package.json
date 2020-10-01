@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon --watch src -e hx,hxml,xml --exec haxe compile.hxml"
+    "watch": "nodemon --watch src -e hx,hxml,xml --exec haxe compile.hxml",
+    "napkin": "napkin --path=dist"
   },
   "repository": {
     "type": "git",
@@ -27,9 +28,11 @@
   },
   "homepage": "https://github.com/LunaTechsDev/LunarBase#readme",
   "dependencies": {
-    "nodemon": "^2.0.4",
-    "lix": "^15.9.0"
-  },  "execMap": {
+    "lix": "^15.9.0",
+    "luna-tea-napkin": "file:../TeaNapkin",
+    "nodemon": "^2.0.4"
+  },
+  "execMap": {
     "hxml": "haxe",
     "hx": "haxe"
   }
