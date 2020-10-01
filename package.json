@@ -4,9 +4,11 @@
   "description": "A base project for creating tools and plugins for RPGMakerMV/MZ.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon --watch src -e hx,hxml,xml --exec haxe compile.hxml",
-    "napkin": "napkin --path=dist"
+    "build": "lix publish.hxml",
+    "compile": "npx luna-wizard build compile.hxml",
+    "watch": "npx luna-wizard build compile.hxml --watch ./src",
+    "clean:dist": "npx napkin -path='./dist/'",
+    "checkstyle": "npx haxelib run checkstyle -s ./src"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,7 @@
     "rmmv",
     "rmmz"
   ],
-  "author": "Kino, Waynee, LTN",
+  "author": "Kino, Waynee, Inc0der",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/LunaTechsDev/LunarBase/issues"
@@ -29,8 +31,8 @@
   "homepage": "https://github.com/LunaTechsDev/LunarBase#readme",
   "dependencies": {
     "lix": "^15.9.0",
-    "luna-tea-napkin": "file:../TeaNapkin",
-    "nodemon": "^2.0.4"
+    "@lunatechs/luna-tea-napkin": "*",
+    "@lunatechs/luna-wizard": "*"
   },
   "execMap": {
     "hxml": "haxe",
