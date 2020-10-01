@@ -73,6 +73,10 @@ class Main {
    * we can create plugin commands with less code and even include it all in our
    * `Main` class. Of course, if the plugin commnds become large, you may want
    * to move them to their own class.
+   * 
+   * You will also notice we once again wrap it in a conditonal compilation flag
+   * which allows us to only include the MZ plugin command registration with
+   * the MZ version of the plugin. 
    */
   public static function registerPluginCommands() {
     utils.Comment.title('Plugin Commands');
@@ -95,6 +99,13 @@ class Main {
       window.hide();
     });
     #else
+    /**
+     * Here we call the jsPatch macro to include our Game_Interpreter class which
+     * contains MV's pluginCommand method.
+     * 
+     * See: object/Game_Interpreter to see how plugin commands are implemented for
+     * MV.
+     */
     macros.FnMacros.jsPatch(true, RmGamne_Interpreter, Game_Interpreter);
     #end
   }
