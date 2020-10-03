@@ -83,7 +83,7 @@ class Main {
     #if !compileMV
     PluginManager.registerCommand(pluginName, 'show', (args) -> {
       /**
-       * Amaryllis is a helper library, here use use it to get the current scene
+       * Amaryllis is a helper library, here we use it to get the current scene
        * which should be Scene_Map and we access the new variable we made
        * in our scenes/Scene_Map class. 
        * 
