@@ -43,7 +43,7 @@ class Main {
      * var rawParams = PluginManager.parameters('Luna_TestPlugin');
      *
      */
-    var rawParams = Globals.Plugins.find((p: PluginSettings) -> p.description.contains('<Luna_TestPlugin>')).parameters;
+    var rawParams = Globals.Plugins.find((p: PluginSettings) -> p.description.contains('<${pluginName}>')).parameters;
 
     /**
      * Here we use a LunaTea helper method which parses the raw parameters into
