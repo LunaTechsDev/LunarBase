@@ -72,19 +72,32 @@ GitHub action will work properly.
 
 For example https://organization.itch.io/repository_name
 
-If your project is not under an organization and you're using our project for
-your own projects then you will need to edit the GitHub action workflows.
+If your project is not under an organization and you're using our project as
+a base for your own projects then you will need to edit the GitHub action
+workflows.
 
-Changing 
+You only have to change `ITCH_USER` to your itch username.
 
 ```bash
+# Change this line
 ITCH_USER: ${{ github.event.organization.name }}
+
+# To something like this
+
+ITCH_USER: your_username
 ```
 
-to
+
+If you don't want to use the repository name then you may also change the
+`ITCH_GAME` to the url slug to your itch project page.
 
 ```bash
-ITCH_USER: your_username
+# Change this line
+ITCH_USER: ${{ github.event.repository.name }}
+
+# To something like this
+
+ITCH_USER: you_project_url_slug
 ```
 
 ## Example Plugin
