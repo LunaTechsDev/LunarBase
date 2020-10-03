@@ -31,8 +31,8 @@
   "homepage": "https://github.com/LunaTechsDev/LunarBase#readme",
   "dependencies": {
     "lix": "^15.9.0",
-    "@lunatechs/luna-tea-napkin": "*",
-    "@lunatechs/luna-wizard": "*"
+    "@lunatechs/lunatea-napkin": "",
+    "@lunatechs/luna-wizard": ""
   },
   "execMap": {
     "hxml": "haxe",
