@@ -1,7 +1,7 @@
 # LunarBase
 
 This is the LunaTechs base RPG Maker plugin development project. Its used to
-demonstrate and show you our basic workflow with [Haxe] and [LunaTea].
+demonstrate and show you our basic workflow with [Haxe](https://haxe.org/) and [LunaTea](https://github.com/LunaTechsDev/LunaTea).
 
 ## Getting Started
 A quick guide to getting started with LunarBase.
