@@ -6,12 +6,12 @@ demonstrate and show you our basic workflow with [Haxe] and [LunaTea].
 ## Getting Started
 A quick guide to getting started with LunarBase.
 
-Before starting be sure to download and install [Node](https://node.org) & [Git](https://git.com).
+Before starting be sure to download and install [Node](https://nodejs.org/en/) & [Git](https://git-scm.com/).
 
 1. Clone this repository
 
 ```bash
-git clone https://github.com/LunaTechsDev/LunarBase
+git clone https://github.com/LunaTechsDev/LunarBase.git
 ```
 
 2. Install node dependencies
