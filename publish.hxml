@@ -10,14 +10,17 @@
 
 -D analyzer-optimize 
 
---macro macros.MacroTools.includeJsLib("./src/Parameters.js")
-
 -main Main
 --each
 
 --next
--js dist/Luna_TestPlugin.js
+-D compileMV
+--macro macros.MacroTools.includeJsLib("./src/ParamsMV.js")
+-js dist/Luna_TestPluginMV.js
 
 --next
--D compileMV
--js dist/Luna_TestPluginMV.js
+-D !compileMV
+--macro macros.MacroTools.includeJsLib("./src/Params.js")
+-js dist/Luna_TestPlugin.js
+
+
