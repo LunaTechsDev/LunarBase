@@ -54,6 +54,14 @@ luna-wizard build compile.hxml --watch ./src
 ```
 See [LunaWizard](https://github.com/lunatechsdev/lunawizard) for further information
 
+## Updating LunaTea
+To update LunaTea we use the `lix` package manager to install from GitHub the
+latest version of LunaTea.
+
+```bash
+npx lix install gh:LunaTechsDev/LunaTea
+```
+
 ## Itch Automation
 LunarBase includes GitHub workflow actions that automatically build and publish
 your plugins to itch.io
