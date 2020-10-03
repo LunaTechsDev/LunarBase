@@ -64,6 +64,21 @@ GitHub action will work properly.
 
 For example https://organization.itch.io/repository_name
 
+If your project is not under an organization and you're using our project for
+your own projects then you will need to edit the GitHub action workflows.
+
+Changing 
+
+```bash
+ITCH_USER: ${{ github.event.organization.name }}
+```
+
+to
+
+```bash
+ITCH_USER: your_username
+```
+
 ## Example Plugin
 The example plugin is a working hello world example which demonstrates how to
 create a basic plugin using LunaTea. Its documented to show you some of
