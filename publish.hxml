@@ -1,0 +1,26 @@
+-lib LunaTea
+
+-cp src
+# JS Version 
+-D js-es=6
+
+--no-traces
+
+-dce full
+
+-D analyzer-optimize 
+
+-main Main
+--each
+
+--next
+-D compileMV
+--macro macros.MacroTools.includeJsLib("./src/ParamsMV.js")
+-js dist/Luna_TestPluginMV.js
+
+--next
+-D !compileMV
+--macro macros.MacroTools.includeJsLib("./src/Params.js")
+-js dist/Luna_TestPlugin.js
+
+
